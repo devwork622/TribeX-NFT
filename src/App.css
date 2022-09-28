@@ -1,0 +1,555 @@
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+
+.app-header {
+	padding: 40px 0;
+}
+.app-header .logo {
+	height: 37px;
+}
+.app-header > .container {
+	display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+	.app-header {
+		padding: 30px 0 27px 0;
+	}
+	.app-header .logo {
+		height: 28px;
+	}
+}
+
+.app-content {
+	padding: 20px 0 30px 0;
+}
+.app-content > .container {
+	padding-right: 0;
+}
+.app-content-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.app-content-inner > div {
+	flex-shrink: 0;
+	width: 50%;
+}
+.app-content .mint-date {
+	margin: 0 0 15px 0;
+	color: #ededed;
+	font: 30px / 46px GothamPro-Bold;
+}
+.app-content h1 {
+	color: #ededed;
+	margin: 0 0 10px 0;
+	font: 46px / 66px GothamPro-Bold;
+}
+.app-content h5 {
+	color: #c0c0c0;
+	margin: 0 0 20px 0;
+	font: 20px / 29px GothamPro-Bold;
+}
+.app-content ul {
+	color: #c0c0c0;
+	margin: 0 0 50px 0;
+	padding: 0 0 0 20px;
+}
+.app-content ul p {
+	margin: 0;
+	color: #c0c0c0;
+	font: 16px / 23px GothamPro-Regular;
+}
+.app-content ul p b {
+	font-weight: 400;
+	font-family: GothamPro-Bold;
+}
+
+.app-content .timer-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	max-width: 545px;
+}
+.app-content .timer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+.app-content .timer > div {
+	flex-shrink: 0;
+	margin: 0 20px;
+}
+.app-content .timer > div:first-child {
+	margin-left: 0;
+}
+.app-content .timer > div:last-child {
+	margin-right: 0;
+}
+.app-content .timer h2 {
+	text-align: center;
+	margin: 0;
+	color: #ededed;
+	font: 100px / 100px 'Bebas Neue';
+}
+.app-content .timer p {
+	margin: 0;
+	color: #c0c0c0;
+	text-align: center;
+	font: 18px / 26px GothamPro-Regular;
+}
+.app-content .btn-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.btn {
+	display: block;
+	background-image: none;
+	box-shadow: none;
+	text-shadow: none;
+	border-radius: 62px;
+	padding: 15px 51px;
+	border: 1px solid transparent;
+	font: 18px / 27px GothamPro-Bold;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.btn span {
+	display: block;
+	transition: all 0.2s ease-in;
+}
+.btn:hover span,
+.btn:focus span,
+.btn:active span {
+	transform: scale(1.05);
+}
+
+.app-content .btn-wallet {
+	background: #ededed;
+	color: #0d0d0d;
+	border-color: #ededed;
+	margin-right: 30px;
+}
+.app-content .btn-learn {
+	background: #0d0d0d;
+	border: 1px solid #e5e5e5;
+	color: #fff;
+	font-family: GothamPro-Regular;
+}
+
+.app-content h1.second {
+	margin-bottom: 15px;
+}
+.app-content p.small {
+	color: #c0c0c0;
+	margin: 0 0 26px 0;
+	font: 18px / 25px GothamPro-Regular;
+}
+.app-content p.small span {
+	font-size: 14px;
+	line-height: 20px;
+}
+.app-content p a {
+	text-decoration: underline;
+	font-size: 16px;
+	font-family: GothamPro-Bold;
+	color: #c0c0c0;
+}
+.app-content p .btn-inline {
+	display: inline-block;
+	background-image: none;
+	box-shadow: none;
+	text-shadow: none;
+	border: none;
+	font-size: 16px;
+	font-family: GothamPro-Bold;
+	border-bottom: 1px solid #c0c0c0;
+	background: transparent;
+	padding: 0 0 0px 0;
+	color: #c0c0c0;
+}
+.app-content .mint-wrapper {
+	margin: 65px 0 60px 0;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.app-content .quantity-wrapper {
+	flex-shrink: 0;
+	margin-right: 24px;
+}
+.app-content .quantity-box {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.app-content .quantity-box h2 {
+	color: #fff;
+	margin: 0 18px;
+	font: 46px / 52px GothamPro-Regular;
+	min-width: 30px;
+	text-align: center;
+}
+.app-content .quantity-box .btn-quantity {
+	text-shadow: none;
+	box-shadow: none;
+	background: #0d0d0d;
+	border: 1px solid #6d6d6d;
+	flex-shrink: 0;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.app-content .quantity-box .btn-quantity svg {
+	display: block;
+	width: 18px;
+	height: 18px;
+}
+.btn-mint {
+	padding-top: 11px;
+	padding-bottom: 11px;
+	line-height: 28px;
+	background: #ff00e5;
+	color: #fff;
+}
+.app-content .quantity-wrapper p.mint-price {
+	text-align: center;
+	color: #c0c0c0;
+	margin: 0 0 30px 0;
+	font: 14px / 20px GothamPro-Regular;
+}
+.app-content .quantity-wrapper p.mint-price b {
+	font-weight: 400;
+	font-family: GothamPro-Bold;
+}
+.app-content p.small.more {
+	font-size: 14px;
+}
+.banner-img-mobile {
+	display: none;
+}
+
+.app-content h1.third {
+	font-size: 46px;
+	line-height: 48px;
+	margin-bottom: 34px;
+	max-width: 650px;
+}
+.app-content .loading-img {
+	width: 65px;
+	margin-bottom: 50px;
+}
+.app-content .third-btn-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 45px;
+	max-width: 294px;
+}
+.app-content .btn-etherscan {
+	margin-right: 0;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	background: #ededed;
+	color: #0d0d0d;
+	border-color: #ededed;
+}
+
+.footer {
+	padding: 10px 0;
+	background: #0d0d0d;
+}
+.footer p {
+	margin: 0;
+	color: #b718a7;
+	font: 18px / 26px GothamPro-Regular;
+}
+.show-large-screens {
+	display: none;
+}
+.footer-placeholder-mobile {
+	display: none;
+	height: 36px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.app-content .timer h2 {
+		font-size: 60px;
+		line-height: 50px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.app-content > .container {
+		padding-right: 15px;
+	}
+	.app-content-inner {
+		flex-direction: column;
+	}
+	.app-content-inner > div {
+		width: 100%;
+	}
+	.app-content-inner .right {
+		display: none;
+	}
+	.banner-img-mobile {
+		margin-bottom: 30px;
+		display: block;
+	}
+	.app-content h1 {
+		text-align: center;
+		font-size: 62px;
+		line-height: 62px;
+		font-family: GothamPro-Black;
+	}
+	.app-content h1.third {
+		font-size: 44px;
+		line-height: 44px;
+		font-family: GothamPro-Black;
+		margin-bottom: 15px;
+		max-width: 100%;
+	}
+	.app-content h5 {
+		text-align: center;
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.app-content ul p {
+		margin-bottom: 15px;
+	}
+	.app-content .timer-box {
+		margin: 0px auto 30px auto;
+		align-items: center;
+	}
+	.app-content .timer {
+		margin-bottom: 58px;
+	}
+	.app-content .timer h2 {
+		font-size: 110px;
+		line-height: 90px;
+	}
+	.app-content .btn-wallet,
+	.app-content .btn-learn {
+		margin-bottom: 16px;
+	}
+	.app-content p.small {
+		text-align: center;
+		font-size: 21px;
+		line-height: 28px;
+	}
+	.app-content p.small.third {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.app-content p.small.margin-mobile {
+		margin-top: 70px;
+	}
+	.app-content .mint-wrapper {
+		flex-direction: column;
+		align-items: center;
+		margin: 23px 0 0px 0;
+	}
+	.app-content .quantity-wrapper {
+		margin-right: 0;
+	}
+	.app-content .quantity-box .btn-quantity {
+		width: 80px;
+		height: 80px;
+	}
+	.app-content .quantity-box h2 {
+		font-size: 72px;
+		line-height: 80px;
+		min-width: 45px;
+	}
+	.btn-mint {
+		padding: 15px 85px;
+	}
+	.app-content .third-btn-wrapper {
+		margin: 125px auto 0 auto;
+	}
+	.footer-placeholder-mobile {
+		display: block;
+	}
+	.footer {
+		position: fixed;
+		z-index: 10;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		padding: 5px 0;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.App {
+		overflow-x: hidden;
+	}
+	.app-content .btn-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	.app-content .btn-wallet {
+		margin-right: 0;
+	}
+	.banner-img-mobile {
+		width: calc(100% + 30px);
+		max-width: calc(100% + 30px);
+		margin-left: -15px;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-height: 800px) {
+	.app-header {
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}
+	.app-content {
+		padding-bottom: 10px;
+	}
+	.app-content-inner > .left {
+		width: 58%;
+	}
+	.app-content-inner > .right {
+		width: 42%;
+	}
+	.app-content .mint-date {
+		margin-bottom: 10px;
+		font-size: 27px;
+		line-height: 40px;
+	}
+	.app-content h1 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.app-content ul {
+		margin-bottom: 25px;
+	}
+	.app-content .timer {
+		margin-bottom: 25px;
+	}
+	.app-content .timer h2 {
+		font-size: 70px;
+		line-height: 60px;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.show-large-screens {
+		display: inline;
+	}
+}
+
+.ReactModal__Body--open,
+.ReactModal__Html--open {
+	overflow: hidden;
+}
+.ReactModal__Overlay {
+	opacity: 0;
+	transition: opacity 200ms ease-in-out;
+	background: rgba(13, 13, 13, 0.7) !important;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+.ReactModal__Overlay--after-open {
+	opacity: 1;
+}
+.ReactModal__Overlay--before-close {
+	opacity: 0;
+}
+.ReactModal__Content {
+	background: rgba(13, 13, 13, 1) !important;
+	border-color: #c0c0c0 !important;
+	inset: 0 !important;
+	position: relative !important;
+	width: 100%;
+	max-width: 800px;
+	max-height: 90%;
+}
+.ReactModal__Content .btn-close {
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffe500;
+	font: 16px / 16px GothamPro-Regular;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	background: rgba(13, 13, 13, 1);
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+}
+.ReactModal__Content .btn-close span {
+	transition: all 0.3s ease-out;
+}
+.ReactModal__Content .btn-close:hover span,
+.ReactModal__Content .btn-close:focus span {
+	transform: rotate(180deg);
+}
+.custom-modal {
+	padding: 20px;
+}
+.custom-modal h1 {
+	text-align: center;
+	margin: 0 0 25px 0;
+	color: #ededed;
+	font: 30px / 40px GothamPro-Bold;
+}
+.custom-modal p {
+	margin: 0 0 20px 0;
+	color: #ededed;
+	font: 14px / 22px GothamPro-Regular;
+}
+.custom-modal .link-wrapper {
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.custom-modal .link-wrapper a {
+	color: #ff00e5;
+	font: 14px / 22px GothamPro-Regular;
+	position: relative;
+}
+.custom-modal .link-wrapper a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0%;
+	height: 1px;
+	background: #ff00e5;
+	transition: all 0.2s ease-in;
+}
+.custom-modal .link-wrapper a:hover::after,
+.custom-modal .link-wrapper a:focus::after {
+	width: 100%;
+}
+.custom-modal h4 {
+	color: #ededed;
+	margin: 0 0 7px 0;
+	font: 20px / 26px GothamPro-Bold;
+}
+
+@media only screen and (max-width: 767px) {
+	.custom-modal {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
